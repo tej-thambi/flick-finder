@@ -65,7 +65,7 @@ function MovieListScreen({navigation, route}){
   }
   
   const searchMovies = async () => {
-    const apiKey = 'e7a5e3a8';
+    const apiKey = 'REDACTED';
     const apiUrl = `http://www.omdbapi.com/?s=${searchQuery}&apikey=${apiKey}`;
     try {
       const response = await fetch(apiUrl);
