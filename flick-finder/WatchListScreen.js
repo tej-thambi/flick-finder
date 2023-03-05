@@ -11,7 +11,7 @@ function WatchListScreen({navigation, route}) {
           const data = [];
           for (let i = 0; i < watchList.length; i++) {
             const id = watchList[i].imdbID;
-            const response = await fetch(`http://www.omdbapi.com/?apikey=e7a5e3a8&i=${id}`);
+            const response = await fetch(`http://www.omdbapi.com/?apikey=REDACTED&i=${id}`);
             const result = await response.json();
             data.push(result);
           }
